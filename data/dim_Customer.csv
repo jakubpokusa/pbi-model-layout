@@ -1,0 +1,31 @@
+CustomerID,CustomerName,City,Country,Segment,JoinDate,Age
+1,Alice,New York,USA,Consumer,2018-01-01,22
+2,Bob,London,UK,Corporate,2018-02-10,29
+3,Charlie,Paris,France,Small Business,2018-03-22,36
+4,Diana,Berlin,Germany,Consumer,2018-05-01,43
+5,Evan,Tokyo,Japan,Corporate,2018-06-10,50
+6,Fiona,Sydney,Australia,Small Business,2018-07-20,57
+7,George,Toronto,Canada,Consumer,2018-08-29,64
+8,Hannah,Dubai,UAE,Corporate,2018-10-08,71
+9,Ivan,Singapore,Singapore,Small Business,2018-11-17,28
+10,Julia,Mumbai,India,Consumer,2018-12-27,35
+11,Kevin,New York,USA,Corporate,2019-02-05,42
+12,Laura,London,UK,Small Business,2019-03-17,49
+13,Mark,Paris,France,Consumer,2019-04-26,56
+14,Nina,Berlin,Germany,Corporate,2019-06-05,63
+15,Oscar,Tokyo,Japan,Small Business,2019-07-15,70
+16,Paula,Sydney,Australia,Consumer,2019-08-24,27
+17,Quinn,Toronto,Canada,Corporate,2019-10-03,34
+18,Rachel,Dubai,UAE,Small Business,2019-11-12,41
+19,Sam,Singapore,Singapore,Consumer,2019-12-22,48
+20,Tina,Mumbai,India,Corporate,2020-01-31,55
+21,Uma,New York,USA,Small Business,2020-03-11,62
+22,Victor,London,UK,Consumer,2020-04-20,69
+23,Wendy,Paris,France,Corporate,2020-05-30,26
+24,Xander,Berlin,Germany,Small Business,2020-07-09,33
+25,Yara,Tokyo,Japan,Consumer,2020-08-18,40
+26,Zoe,Sydney,Australia,Corporate,2020-09-27,47
+27,Aaron,Toronto,Canada,Small Business,2020-11-06,54
+28,Beth,Dubai,UAE,Consumer,2020-12-16,61
+29,Carl,Singapore,Singapore,Corporate,2021-01-25,68
+30,Dina,Mumbai,India,Small Business,2021-03-06,25

@@ -1,0 +1,41 @@
+ProductID,ProductName,CategoryID,Brand,UnitPrice,WeightKg,LaunchYear
+1,Widget A,1,BrandX,9.99,0.1,2015
+2,Gadget Pro,2,BrandY,23.69,0.47,2016
+3,SuperTool,3,BrandZ,37.39,0.84,2017
+4,MegaBox,4,NovaCo,51.09,1.21,2018
+5,QuickPack,5,AlphaTech,64.79,1.58,2019
+6,FlexStrip,6,OmegaGoods,78.49,1.95,2020
+7,TurboKit,7,BrandX,92.19,2.32,2021
+8,NanoChip,1,BrandY,105.89,2.69,2022
+9,PowerDrive,2,BrandZ,119.59,3.06,2023
+10,SmartCase,3,NovaCo,133.29,3.43,2015
+11,EcoBlend,4,AlphaTech,146.99,3.8,2016
+12,UltraFit,5,OmegaGoods,160.69,4.17,2017
+13,PrimePack,6,BrandX,174.39,4.54,2018
+14,CoreUnit,7,BrandY,188.09,4.91,2019
+15,ZenFlow,1,BrandZ,201.79,5.28,2020
+16,BrightStar,2,NovaCo,215.49,5.65,2021
+17,SwiftEdge,3,AlphaTech,229.19,6.02,2022
+18,IronClad,4,OmegaGoods,242.89,6.39,2023
+19,SilkTouch,5,BrandX,256.59,6.76,2015
+20,VividClear,6,BrandY,270.29,7.13,2016
+21,Widget A v2,7,BrandZ,283.99,7.5,2017
+22,Gadget Pro v2,1,NovaCo,297.69,7.87,2018
+23,SuperTool v2,2,AlphaTech,311.39,8.24,2019
+24,MegaBox v2,3,OmegaGoods,325.09,8.61,2020
+25,QuickPack v2,4,BrandX,338.79,8.98,2021
+26,FlexStrip v2,5,BrandY,352.49,9.35,2022
+27,TurboKit v2,6,BrandZ,366.19,9.72,2023
+28,NanoChip v2,7,NovaCo,379.89,10.09,2015
+29,PowerDrive v2,1,AlphaTech,393.59,10.46,2016
+30,SmartCase v2,2,OmegaGoods,407.29,10.83,2017
+31,EcoBlend v2,3,BrandX,420.99,11.2,2018
+32,UltraFit v2,4,BrandY,434.69,11.57,2019
+33,PrimePack v2,5,BrandZ,448.39,11.94,2020
+34,CoreUnit v2,6,NovaCo,462.09,12.31,2021
+35,ZenFlow v2,7,AlphaTech,475.79,12.68,2022
+36,BrightStar v2,1,OmegaGoods,489.49,13.05,2023
+37,SwiftEdge v2,2,BrandX,13.19,13.42,2015
+38,IronClad v2,3,BrandY,26.89,13.79,2016
+39,SilkTouch v2,4,BrandZ,40.59,14.16,2017
+40,VividClear v2,5,NovaCo,54.29,14.53,2018

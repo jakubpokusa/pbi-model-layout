@@ -1,0 +1,13 @@
+RegionID,RegionName,Country,Continent
+1,Northeast,USA,North America
+2,Southeast,USA,North America
+3,Midwest,USA,North America
+4,Ontario,Canada,North America
+5,England,UK,Europe
+6,Île-de-France,France,Europe
+7,Bavaria,Germany,Europe
+8,Kanto,Japan,Asia Pacific
+9,New South Wales,Australia,Asia Pacific
+10,Central,Singapore,Asia Pacific
+11,Dubai,UAE,Middle East
+12,São Paulo,Brazil,South America

@@ -1,0 +1,26 @@
+PromotionID,PromotionName,PromotionType,DiscountPct,StartDate,EndDate,BudgetUSD
+1,Discount #1,Discount,5,2022-01-15,2022-01-29,5000
+2,BuyOneGetOne #2,BuyOneGetOne,12,2022-03-01,2022-03-18,8200
+3,FreeShipping #3,FreeShipping,19,2022-04-15,2022-05-05,11400
+4,Bundle #4,Bundle,26,2022-05-30,2022-06-22,14600
+5,Cashback #5,Cashback,33,2022-07-14,2022-08-09,17800
+6,Discount #6,Discount,40,2022-08-28,2022-09-26,21000
+7,BuyOneGetOne #7,BuyOneGetOne,47,2022-10-12,2022-11-13,24200
+8,FreeShipping #8,FreeShipping,9,2022-11-26,2022-12-31,27400
+9,Bundle #9,Bundle,16,2023-01-10,2023-02-17,30600
+10,Cashback #10,Cashback,23,2023-02-24,2023-04-06,33800
+11,Discount #11,Discount,30,2023-04-10,2023-05-24,37000
+12,BuyOneGetOne #12,BuyOneGetOne,37,2023-05-25,2023-07-11,40200
+13,FreeShipping #13,FreeShipping,44,2023-07-09,2023-08-28,43400
+14,Bundle #14,Bundle,6,2023-08-23,2023-10-15,46600
+15,Cashback #15,Cashback,13,2023-10-07,2023-12-02,49800
+16,Discount #16,Discount,20,2023-11-21,2024-01-19,53000
+17,BuyOneGetOne #17,BuyOneGetOne,27,2024-01-05,2024-03-07,56200
+18,FreeShipping #18,FreeShipping,34,2024-02-19,2024-04-24,59400
+19,Bundle #19,Bundle,41,2024-04-04,2024-06-11,62600
+20,Cashback #20,Cashback,48,2024-05-19,2024-07-29,65800
+21,Discount #21,Discount,10,2024-07-03,2024-07-17,69000
+22,BuyOneGetOne #22,BuyOneGetOne,17,2024-08-17,2024-09-03,72200
+23,FreeShipping #23,FreeShipping,24,2024-10-01,2024-10-21,75400
+24,Bundle #24,Bundle,31,2024-11-15,2024-12-08,78600
+25,Cashback #25,Cashback,38,2024-12-30,2025-01-25,81800

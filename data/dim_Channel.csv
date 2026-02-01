@@ -1,0 +1,7 @@
+ChannelID,ChannelName,CostRate
+1,Online Store,0.02
+2,Mobile App,0.025
+3,Retail Store,0.04
+4,Wholesale,0.015
+5,Call Center,0.035
+6,Marketplace,0.03

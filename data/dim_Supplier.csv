@@ -1,0 +1,16 @@
+SupplierID,SupplierName,Country,LeadTimeDays,Rating
+1,GlobalSupply Co,USA,2,3.0
+2,FastShip Ltd,UK,5,3.4
+3,EcoSource,China,8,3.7
+4,TechWare Inc,India,11,4.1
+5,PrimeMaterials,Germany,14,4.5
+6,QuickDeliver,Japan,17,4.8
+7,NatureGoods,Brazil,20,3.2
+8,IronForge,Canada,23,3.6
+9,BrightParts,France,26,4.0
+10,SwiftLogistics,Australia,29,4.3
+11,NovaStock,Italy,4,4.7
+12,AlphaDist,Mexico,7,3.1
+13,OmegaTrade,South Korea,10,3.4
+14,ZenSupply,Taiwan,13,3.8
+15,CoreVendors,Netherlands,16,4.2
