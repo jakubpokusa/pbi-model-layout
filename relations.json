@@ -1,0 +1,90 @@
+[
+    {
+        "from": "dim_Customer",
+        "to": "LocalDateTable_b40dc68a-e1b4-4564-b617-dc47a8aed26d"
+    },
+    {
+        "from": "dim_Date",
+        "to": "LocalDateTable_d7bb3024-8317-48a0-b44c-96c1c89ea8b6"
+    },
+    {
+        "from": "dim_Employee",
+        "to": "LocalDateTable_614e8657-13f9-4e48-9437-83cfe795a887"
+    },
+    {
+        "from": "dim_Promotion",
+        "to": "LocalDateTable_1b54df24-fbf8-4fb2-9cb6-6a09eb9f6d46"
+    },
+    {
+        "from": "dim_Promotion",
+        "to": "LocalDateTable_859b68d3-0008-4631-bccc-88fea3d983c9"
+    },
+    {
+        "from": "fct_Orders",
+        "to": "dim_Customer"
+    },
+    {
+        "from": "fct_Orders",
+        "to": "dim_Product"
+    },
+    {
+        "from": "fct_Orders",
+        "to": "dim_Store"
+    },
+    {
+        "from": "fct_Orders",
+        "to": "dim_Employee"
+    },
+    {
+        "from": "fct_Orders",
+        "to": "dim_Promotion"
+    },
+    {
+        "from": "fct_Orders",
+        "to": "dim_Channel"
+    },
+    {
+        "from": "fct_Orders",
+        "to": "dim_Region"
+    },
+    {
+        "from": "fct_Orders",
+        "to": "dim_Date"
+    },
+    {
+        "from": "fct_Inventory",
+        "to": "dim_Product"
+    },
+    {
+        "from": "fct_Inventory",
+        "to": "dim_Store"
+    },
+    {
+        "from": "fct_Inventory",
+        "to": "dim_Supplier"
+    },
+    {
+        "from": "fct_Inventory",
+        "to": "dim_Date"
+    },
+    {
+        "from": "fct_WebSessions",
+        "to": "dim_Customer"
+    },
+    {
+        "from": "fct_WebSessions",
+        "to": "dim_Product"
+    },
+    {
+        "from": "fct_WebSessions",
+        "to": "dim_Channel"
+    },
+    {
+        "from": "fct_WebSessions",
+        "to": "dim_Region"
+    },
+    {
+        "from": "dim_Product",
+        "to": "dim_Category"
+    }
+]
