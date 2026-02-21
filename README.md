@@ -31,7 +31,7 @@ The `.pbit` is a ZIP containing a human-readable `DataModelSchema` with all tabl
 
 The tool picks a layout automatically based on your model structure:
 
-**Single fact → Star layout**
+**Single fact → Star layout**  
 The fact table sits at the centre, dimension tables are placed in a ring around it. Snowflake children (dims connected to other dims) are pushed outward behind their parent.
 
 **Multiple facts → Grid layout**
@@ -46,6 +46,22 @@ fct_WebSessions
 
 The tool uses each table's real card height (set by Power BI based on column count) so nothing overlaps.
 
+## Diagram tabs
+
+Add `--create-tabs` to generate focused views — one tab per fact table in Power BI's Model View:
+
+```bash
+python pbix_layout_tool.py model.pbix --relations relations.json --create-tabs
+```
+
+This creates:
+- **Diagram 0** (master): All tables in the grid/star layout
+- **Diagram 1-N**: One tab per fact, showing only that fact + its connected dims + snowflake children in a star layout
+
+Switch between tabs using the diagram selector in Power BI Desktop's Model View (bottom left). Useful for large models where the full view gets overwhelming.
+
+![Tabs feature](tabs_feature.png)
+
 ## Options
 
 | Flag | Default | Description |
@@ -55,6 +71,7 @@ The tool uses each table's real card height (set by Power BI based on column cou
 | `--fact-prefixes` | `fct_,fact_,FCT_,FACT_` | Comma-separated fact table prefixes |
 | `--dim-prefixes` | `dim_,DIM_,Dim_,d_,D_` | Comma-separated dim table prefixes |
 | `--radius N` | `520` | Star layout: radius from fact to dim ring |
+| `--create-tabs` | — | Generate focused diagram tabs (one per fact table) |
 | `--dry-run` | — | Print layout plan without writing |
 | `--extract-relations` | — | Extract relationships from a `.pbit` |
 | `--generate-relations` | — | Print a blank `relations.json` template |
