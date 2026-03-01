@@ -1,6 +1,6 @@
 # pbi-model-layout
 
-Automatically arranges Power BI model diagram views into clean, relationship-aware layouts. Detects fact and dimension tables by prefix, reads real node sizes from the `.pbix`, and writes positions back — no manual dragging required.
+Automatically arranges Power BI model diagram views into clean, relationship-aware layouts. Detects fact and dimension tables by prefix, reads real node sizes from the `.pbix`, and writes positions back - no manual dragging required.
 
 Available as both a **command-line tool** and a **graphical interface**.
 
@@ -18,6 +18,7 @@ python pbi_layout_gui.py
 ```
 
 The GUI provides:
+
 - Visual preview of layouts before applying
 - Multiple layout modes (auto, grid, horizontal, star, vertical stack)
 - Interactive drag-and-drop to fine-tune positions
@@ -41,6 +42,7 @@ Open the generated `your_model_arranged.pbix` in Power BI Desktop.
 ## GUI Features
 
 ### Interactive Preview
+
 - **Auto-fit**: Opens with entire model visible
 - **Zoom**: Mouse wheel to zoom 20%-300%
 - **Drag tables**: Click and drag any table to reposition
@@ -48,6 +50,7 @@ Open the generated `your_model_arranged.pbix` in Power BI Desktop.
 - **Save Layout**: Explicitly save manual adjustments before applying
 
 ### Layout Modes
+
 Switch between different layout strategies in real-time:
 
 - **auto** - Smart layout based on model structure (star for 1 fact, grid for multiple)
@@ -57,6 +60,7 @@ Switch between different layout strategies in real-time:
 - **vertical_stack** - Facts left, dims inline to the right
 
 ### Preview Controls
+
 - **Layout dropdown**: Switch layout modes
 - **Radius control**: Adjust spacing in star layouts (100-1000px)
 - **Zoom display**: Current zoom percentage
@@ -66,12 +70,12 @@ Switch between different layout strategies in real-time:
 - **Apply This Layout**: Write to `.pbix` file
 
 ### Visual Features
+
 - **Color-coded tables**:
   - Blue = Fact tables
   - Red = Dimensions
   - Green = Snowflake dimensions
 - **Relationship info boxes**: Shows connections below each dim/snowflake
-- **Generous spacing**: 200px gaps between tables for clarity
 
 ## How to get the `.pbit`
 
@@ -82,36 +86,44 @@ The `.pbit` is a ZIP containing a human-readable `DataModelSchema` with all tabl
 ## Layout Modes Explained
 
 ### Auto Mode
+
 Automatically picks the best layout:
+
 - **Single fact** → Star layout (fact center, dims in ring)
 - **Multiple facts** → Grid layout (facts left, dims below)
 
 ### Grid Layout
+
 ```
 fct_Orders
 fct_Inventory          dim_A  dim_B  dim_C  ...  dim_Parent  dim_Child
 fct_WebSessions
 ```
+
 Facts stack vertically on the left, all dims line up horizontally below with generous spacing.
 
 ### Horizontal Layout
+
 Facts arranged horizontally across the top, each with its dims in a column below.
 
 ### Star Layout
+
 Facts at center with dimensions radiating outward in a ring. For multiple facts, creates multiple star clusters.
 
 ### Vertical Stack
+
 Facts in left column, dimensions inline to the right (same row), snowflakes below their parent dims.
 
 ## Diagram Tabs
 
-Add `--create-tabs` (CLI) or check the option in GUI to generate focused views — one tab per fact table:
+Add `--create-tabs` (CLI) or check the option in GUI to generate focused views - one tab per fact table:
 
 ```bash
 python pbix_layout_tool.py model.pbix --relations relations.json --create-tabs
 ```
 
 This creates:
+
 - **Diagram 0** (master): All tables in chosen layout
 - **Diagram 1-N**: One tab per fact, showing only that fact + connected dims in star layout
 
@@ -121,24 +133,24 @@ Switch between tabs using the diagram selector in Power BI Desktop's Model View 
 
 ## Command-Line Options
 
-| Flag | Default | Description |
-|---|---|---|
-| `--output FILE` | `input_arranged.pbix` | Output path |
-| `--relations FILE` | — | Path to `relations.json` |
-| `--fact-prefixes` | `fct_,fact_,FCT_,FACT_` | Comma-separated fact table prefixes |
-| `--dim-prefixes` | `dim_,DIM_,Dim_,d_,D_` | Comma-separated dim table prefixes |
-| `--radius N` | `520` | Star layout: radius from fact to dim ring |
-| `--create-tabs` | — | Generate focused diagram tabs (one per fact table) |
-| `--extract-relations` | — | Extract relationships from a `.pbit` |
-| `--generate-relations` | — | Print a blank `relations.json` template |
+| Flag                   | Default                 | Description                                        |
+| ---------------------- | ----------------------- | -------------------------------------------------- |
+| `--output FILE`        | `input_arranged.pbix`   | Output path                                        |
+| `--relations FILE`     | —                       | Path to `relations.json`                           |
+| `--fact-prefixes`      | `fct_,fact_,FCT_,FACT_` | Comma-separated fact table prefixes                |
+| `--dim-prefixes`       | `dim_,DIM_,Dim_,d_,D_`  | Comma-separated dim table prefixes                 |
+| `--radius N`           | `520`                   | Star layout: radius from fact to dim ring          |
+| `--create-tabs`        | —                       | Generate focused diagram tabs (one per fact table) |
+| `--extract-relations`  | —                       | Extract relationships from a `.pbit`               |
+| `--generate-relations` | —                       | Print a blank `relations.json` template            |
 
 ## `relations.json` Format
 
 ```json
 [
-    { "from": "fct_Orders",  "to": "dim_Customer" },
-    { "from": "fct_Orders",  "to": "dim_Product" },
-    { "from": "dim_Product", "to": "dim_Category" }
+  { "from": "fct_Orders", "to": "dim_Customer" },
+  { "from": "fct_Orders", "to": "dim_Product" },
+  { "from": "dim_Product", "to": "dim_Category" }
 ]
 ```
 
